@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "hardhat compile",
-    "withdraw-token": "hardhat run scripts/exec.js"
+    "depositETH": "hardhat run scripts/exec.js"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.2",
