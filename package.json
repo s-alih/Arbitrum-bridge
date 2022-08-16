@@ -1,21 +1,21 @@
 {
-  "name": "token-deposit",
+  "name": "greeter",
   "license": "Apache-2.0",
   "version": "1.0.0",
   "scripts": {
     "build": "hardhat compile",
-    "depositETH": "hardhat run scripts/exec.js"
+    "greeter": "hardhat run scripts/exec.js"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.2",
-    "chai": "^4.3.4",
     "ethers": "^5.1.2",
-    "hardhat": "^2.10.1"
+    "hardhat": "^2.2.0"
   },
   "dependencies": {
     "@arbitrum/sdk": "^2.0.9",
+    "arb-bridge-eth": "^0.7.5",
     "arb-shared-dependencies": "^1.0.0",
-    "dotenv": "^8.2.0",
-    "readable-stream": "^4.1.0"
+    "arbos-precompiles": "^1.0.2",
+    "dotenv": "^8.2.0"
   }
 }

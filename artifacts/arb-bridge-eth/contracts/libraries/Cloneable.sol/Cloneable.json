@@ -1,0 +1,29 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "Cloneable",
+  "sourceName": "arb-bridge-eth/contracts/libraries/Cloneable.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "isMaster",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6080604052348015600f57600080fd5b5060016000806101000a81548160ff0219169083151502179055506097806100386000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80636f791d2914602d575b600080fd5b6033604b565b60405180821515815260200191505060405180910390f35b60008060009054906101000a900460ff1690509056fea2646970667358221220aff1cf015cdc8be7715c7f952e5906d0c8ef762e5f4cf30769ea8fa167e3e70764736f6c634300060c0033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c80636f791d2914602d575b600080fd5b6033604b565b60405180821515815260200191505060405180910390f35b60008060009054906101000a900460ff1690509056fea2646970667358221220aff1cf015cdc8be7715c7f952e5906d0c8ef762e5f4cf30769ea8fa167e3e70764736f6c634300060c0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

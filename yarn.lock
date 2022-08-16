@@ -513,6 +513,21 @@
   resolved "https://registry.npmjs.org/@nomiclabs/hardhat-ethers/-/hardhat-ethers-2.1.0.tgz"
   integrity sha512-vlW90etB3675QWG7tMrHaDoTa7ymMB7irM4DAQ98g8zJoe9YqEggeDnbO6v5b+BLth/ty4vN6Ko/kaqRN1krHw==
 
+"@openzeppelin/contracts-0.8@npm:@openzeppelin/contracts@^4.3.2":
+  version "4.7.3"
+  resolved "https://registry.yarnpkg.com/@openzeppelin/contracts/-/contracts-4.7.3.tgz#939534757a81f8d69cc854c7692805684ff3111e"
+  integrity sha512-dGRS0agJzu8ybo44pCIf3xBaPQN/65AIXNgK8+4gzKd5kbvlqyxryUYVLJv7fK98Seyd2hDZzVEHSWAh0Bt1Yw==
+
+"@openzeppelin/contracts-upgradeable@3.4.2":
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/@openzeppelin/contracts-upgradeable/-/contracts-upgradeable-3.4.2.tgz#2c2a1b0fa748235a1f495b6489349776365c51b3"
+  integrity sha512-mDlBS17ymb2wpaLcrqRYdnBAmP1EwqhOXMvqWk2c5Q1N1pm5TkiCtXM9Xzznh4bYsQBq0aIWEkFFE2+iLSN1Tw==
+
+"@openzeppelin/contracts@3.4.2":
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/@openzeppelin/contracts/-/contracts-3.4.2.tgz#d81f786fda2871d1eb8a8c5a73e455753ba53527"
+  integrity sha512-z0zMCjyhhp4y7XKAcDAi3Vgms4T2PstwBdahiO0+9NaGICQKjynK3wduSRplTgk4LXmoO1yfDGO5RbjKYxtuxA==
+
 "@scure/base@~1.1.0":
   version "1.1.1"
   resolved "https://registry.npmjs.org/@scure/base/-/base-1.1.1.tgz"
@@ -837,13 +852,30 @@ anymatch@~3.1.2:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
+arb-bridge-eth@^0.7.5:
+  version "0.7.8"
+  resolved "https://registry.yarnpkg.com/arb-bridge-eth/-/arb-bridge-eth-0.7.8.tgz#ce4dd26db7056749c61c2594813bc4a1442651fd"
+  integrity sha512-69ByA+0/vEZNOP21h0XINuwtgnqUQ291mBoj60PhnpLlQgSbm93ZzapEeSKvX829gjRa/96EQ09m56l8XtE5Yg==
+  dependencies:
+    "@openzeppelin/contracts" "3.4.2"
+    "@openzeppelin/contracts-0.8" "npm:@openzeppelin/contracts@^4.3.2"
+    "@openzeppelin/contracts-upgradeable" "3.4.2"
+    hardhat "^2.6.1"
+
 arb-shared-dependencies@^1.0.0:
   version "1.0.0"
-  resolved "https://registry.npmjs.org/arb-shared-dependencies/-/arb-shared-dependencies-1.0.0.tgz"
+  resolved "https://registry.yarnpkg.com/arb-shared-dependencies/-/arb-shared-dependencies-1.0.0.tgz#6ca7dcf81f2a1da1299d97f47f71fa4f880bbea5"
   integrity sha512-aIyJdJBmnWddAMdlrt0nv5XCO0150YKRdmr4maAe7QsRG4ybkVn6jO96hBKc71VUYtVkaFp9l03YSGUFk/ukzw==
   dependencies:
     dotenv "^8.2.0"
     eslint-plugin-prettier "^3.4.0"
+
+arbos-precompiles@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/arbos-precompiles/-/arbos-precompiles-1.0.2.tgz#7bebd5963aef972cd259eb41f3116ea065013ea6"
+  integrity sha512-1dOFYFJUN0kKoofh6buZJ8qCqTs+oLGSsGzHI0trA/Pka/TCERflCRsNVxez2lihOvK7MT/a2RA8AepKtBXdPQ==
+  dependencies:
+    hardhat "^2.6.4"
 
 arg@^4.1.0:
   version "4.1.3"
@@ -864,11 +896,6 @@ array-back@^4.0.1, array-back@^4.0.2:
   version "4.0.2"
   resolved "https://registry.npmjs.org/array-back/-/array-back-4.0.2.tgz"
   integrity sha512-NbdMezxqf94cnNfWLL7V/im0Ub+Anbb0IoZhvzie8+4HJ4nMQuzHuy49FkGYCJK2yAloZ3meiB6AVMClbrI1vg==
-
-assertion-error@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npmjs.org/assertion-error/-/assertion-error-1.1.0.tgz"
-  integrity sha512-jgsaNduz+ndvGyFt3uSuWqvy4lCnIJiovtouQN5JZHOKCS2QuhEdbcQHFhVksz2N2U9hXJo8odG7ETyWlEeuDw==
 
 async-eventemitter@^0.2.4:
   version "0.2.4"
@@ -1029,19 +1056,6 @@ camelcase@^6.0.0:
   resolved "https://registry.npmjs.org/camelcase/-/camelcase-6.3.0.tgz"
   integrity sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==
 
-chai@^4.3.4:
-  version "4.3.6"
-  resolved "https://registry.npmjs.org/chai/-/chai-4.3.6.tgz"
-  integrity sha512-bbcp3YfHCUzMOvKqsztczerVgBKSsEijCySNlHHbX3VG1nskvqjz5Rfso1gGwD6w6oOV3eI60pKuMOV5MV7p3Q==
-  dependencies:
-    assertion-error "^1.1.0"
-    check-error "^1.0.2"
-    deep-eql "^3.0.1"
-    get-func-name "^2.0.0"
-    loupe "^2.3.1"
-    pathval "^1.1.1"
-    type-detect "^4.0.5"
-
 chalk@^2.4.2:
   version "2.4.2"
   resolved "https://registry.npmjs.org/chalk/-/chalk-2.4.2.tgz"
@@ -1058,11 +1072,6 @@ chalk@^4.1.0:
   dependencies:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
-
-check-error@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.npmjs.org/check-error/-/check-error-1.0.2.tgz"
-  integrity sha512-BrgHpW9NURQgzoNyjfq0Wu6VFO6D7IZEmJNdtgNqpzGG8RuNFHt2jQxWlAs4HMe119chBnv+34syEZtc6IhLtA==
 
 chokidar@3.5.3, chokidar@^3.4.0:
   version "3.5.3"
@@ -1220,13 +1229,6 @@ decamelize@^4.0.0:
   resolved "https://registry.npmjs.org/decamelize/-/decamelize-4.0.0.tgz"
   integrity sha512-9iE1PgSik9HeIIw2JO94IidnE3eBoQrFJ3w7sFuzSX4DpmZ3v5sZpUiV5Swcf6mQEF+Y0ru8Neo+p+nyh2J+hQ==
 
-deep-eql@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.npmjs.org/deep-eql/-/deep-eql-3.0.1.tgz"
-  integrity sha512-+QeIQyN5ZuO+3Uk5DYh6/1eKO0m0YmJFGNmFHGACpf1ClL1nmlV/p4gNgbl2pJGxgXb4faqo6UE+M5ACEMyVcw==
-  dependencies:
-    type-detect "^4.0.0"
-
 deep-extend@~0.6.0:
   version "0.6.0"
   resolved "https://registry.npmjs.org/deep-extend/-/deep-extend-0.6.0.tgz"
@@ -1329,7 +1331,7 @@ escape-string-regexp@^1.0.5:
 
 eslint-plugin-prettier@^3.4.0:
   version "3.4.1"
-  resolved "https://registry.npmjs.org/eslint-plugin-prettier/-/eslint-plugin-prettier-3.4.1.tgz"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-3.4.1.tgz#e9ddb200efb6f3d05ffe83b1665a716af4a387e5"
   integrity sha512-htg25EUYUeIhKHXjOinK4BgCcDwtLHjqaxCDsMy5nbnUMkKFvIhMVCp+5GFUXQ4Nr8lBsPqtGAqBenbpFqAA2g==
   dependencies:
     prettier-linter-helpers "^1.0.0"
@@ -1456,7 +1458,7 @@ evp_bytestokey@^1.0.3:
 
 fast-diff@^1.1.2:
   version "1.2.0"
-  resolved "https://registry.npmjs.org/fast-diff/-/fast-diff-1.2.0.tgz"
+  resolved "https://registry.yarnpkg.com/fast-diff/-/fast-diff-1.2.0.tgz#73ee11982d86caaf7959828d519cfe927fac5f03"
   integrity sha512-xJuoT5+L99XlZ8twedaRf6Ax2TgQVxvgZOYoPKqZufmJib0tL2tegPBOZb1pVNgIhlqDlA0eO0c3wBvQcmzx4w==
 
 fill-range@^7.0.1:
@@ -1553,11 +1555,6 @@ get-caller-file@^2.0.5:
   resolved "https://registry.npmjs.org/get-caller-file/-/get-caller-file-2.0.5.tgz"
   integrity sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==
 
-get-func-name@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/get-func-name/-/get-func-name-2.0.0.tgz"
-  integrity sha512-Hm0ixYtaSZ/V7C8FJrtZIuBBI+iSgL+1Aq82zSu8VQNB4S3Gk8e7Qs3VwBDJAhmRZcFqkl3tQu36g/Foh5I5ig==
-
 get-intrinsic@^1.0.2:
   version "1.1.2"
   resolved "https://registry.npmjs.org/get-intrinsic/-/get-intrinsic-1.1.2.tgz"
@@ -1603,10 +1600,10 @@ graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.1.9:
   resolved "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.10.tgz"
   integrity sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==
 
-hardhat@^2.10.1:
-  version "2.10.1"
-  resolved "https://registry.yarnpkg.com/hardhat/-/hardhat-2.10.1.tgz#37fdc0c96d6a5d16b322269db2ad8f9f115c4046"
-  integrity sha512-0FN9TyCtn7Lt25SB2ei2G7nA2rZjP+RN6MvFOm+zYwherxLZNo6RbD8nDz88eCbhRapevmXqOiL2nM8INKsjmA==
+hardhat@^2.2.0, hardhat@^2.6.1, hardhat@^2.6.4:
+  version "2.10.2"
+  resolved "https://registry.yarnpkg.com/hardhat/-/hardhat-2.10.2.tgz#ff94ee4cb144a9c114641581ff5e4d7bea5f93a9"
+  integrity sha512-L/KvDDT/MA6332uAtYTqdcHoSABljw4pPjHQe5SHdIJ+xKfaSc6vDKw03CmrQ5Xup0gHs8XnVSBpZo1AbbIW7g==
   dependencies:
     "@ethereumjs/block" "^3.6.2"
     "@ethereumjs/blockchain" "^5.5.2"
@@ -1971,13 +1968,6 @@ log-symbols@4.1.0:
     chalk "^4.1.0"
     is-unicode-supported "^0.1.0"
 
-loupe@^2.3.1:
-  version "2.3.4"
-  resolved "https://registry.npmjs.org/loupe/-/loupe-2.3.4.tgz"
-  integrity sha512-OvKfgCC2Ndby6aSTREl5aCCPTNIzlDfQZvZxNUrBrihDhL3xcrYegTblhmEiCrg2kKQz4XsFIaemE5BF4ybSaQ==
-  dependencies:
-    get-func-name "^2.0.0"
-
 lru-cache@^5.1.1:
   version "5.1.1"
   resolved "https://registry.npmjs.org/lru-cache/-/lru-cache-5.1.1.tgz"
@@ -2227,11 +2217,6 @@ path-parse@^1.0.6:
   resolved "https://registry.npmjs.org/path-parse/-/path-parse-1.0.7.tgz"
   integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
 
-pathval@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.npmjs.org/pathval/-/pathval-1.1.1.tgz"
-  integrity sha512-Dp6zGqpTdETdR63lehJYPeIOqpiNBNtc7BpWSLrOje7UaIsE5aY92r/AunQA7rsXvet3lrJ3JnZX29UPTKXyKQ==
-
 pbkdf2@^3.0.17:
   version "3.1.2"
   resolved "https://registry.npmjs.org/pbkdf2/-/pbkdf2-3.1.2.tgz"
@@ -2250,7 +2235,7 @@ picomatch@^2.0.4, picomatch@^2.2.1:
 
 prettier-linter-helpers@^1.0.0:
   version "1.0.0"
-  resolved "https://registry.npmjs.org/prettier-linter-helpers/-/prettier-linter-helpers-1.0.0.tgz"
+  resolved "https://registry.yarnpkg.com/prettier-linter-helpers/-/prettier-linter-helpers-1.0.0.tgz#d23d41fe1375646de2d0104d3454a3008802cf7b"
   integrity sha512-GbK2cP9nraSSUF9N2XwUwqfzlAFlMNYYl+ShE/V+H8a9uNl/oUqB1w2EL54Jh0OlyRSd8RfWYJ3coVS4TROP2w==
   dependencies:
     fast-diff "^1.1.2"
@@ -2297,13 +2282,6 @@ readable-stream@^3.1.0, readable-stream@^3.4.0, readable-stream@^3.6.0:
     inherits "^2.0.3"
     string_decoder "^1.1.1"
     util-deprecate "^1.0.1"
-
-readable-stream@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.npmjs.org/readable-stream/-/readable-stream-4.1.0.tgz"
-  integrity sha512-sVisi3+P2lJ2t0BPbpK629j8wRW06yKGJUcaLAGXPAUhyUxVJm7VsCTit1PFgT4JHUDMrGNR+ZjSKpzGaRF3zw==
-  dependencies:
-    abort-controller "^3.0.0"
 
 readdirp@~3.6.0:
   version "3.6.0"
@@ -2627,11 +2605,6 @@ tweetnacl@^1.0.3:
   version "1.0.3"
   resolved "https://registry.npmjs.org/tweetnacl/-/tweetnacl-1.0.3.tgz"
   integrity sha512-6rt+RN7aOi1nGMyC4Xa5DdYiukl2UWCbcJft7YhxReBGQD7OAM8Pbxw6YMo4r2diNEA8FEmu32YOn9rhaiE5yw==
-
-type-detect@^4.0.0, type-detect@^4.0.5:
-  version "4.0.8"
-  resolved "https://registry.npmjs.org/type-detect/-/type-detect-4.0.8.tgz"
-  integrity sha512-0fr/mIH1dlO+x7TlcMy+bIDqKPsw/70tVyeHW787goQjhmqaZe10uwLujubK9q9Lg6Fiho1KUKDYz0Z7k7g5/g==
 
 type-fest@^0.21.3:
   version "0.21.3"
